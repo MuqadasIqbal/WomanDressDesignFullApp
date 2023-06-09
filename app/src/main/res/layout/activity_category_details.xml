@@ -30,7 +30,7 @@
         app:layout_constraintStart_toStartOf="@+id/categoriesView"
         app:layout_constraintTop_toTopOf="@+id/categoriesView" />
 
-    <androidx.cardview.widget.CardView
+    <!--   <androidx.cardview.widget.CardView
         android:id="@+id/imageView1"
         android:layout_width="match_parent"
         android:layout_height="500dp"
@@ -38,19 +38,26 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_alignParentTop="true"
         android:layout_margin="8dp"
-        app:cardCornerRadius="8dp">
+        app:cardCornerRadius="8dp">-->
 
-        <com.smarteist.autoimageslider.SliderView
-            android:id="@+id/imageSlider"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:sliderAnimationDuration="600"
-            app:sliderAutoCycleDirection="back_and_forth"
-            app:sliderIndicatorAnimationDuration="600"
-            app:sliderIndicatorEnabled="false"
-            app:sliderScrollTimeInSec="1" />
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_400sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoriesView"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorEnabled="false"
+        app:sliderScrollTimeInSec="1" />
 
-    </androidx.cardview.widget.CardView>
+    <!-- </androidx.cardview.widget.CardView>-->
 
 
     <ImageButton
@@ -62,7 +69,7 @@
         app:layout_constraintEnd_toStartOf="@+id/solidShare"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView1" />
+        app:layout_constraintTop_toBottomOf="@id/imageSlider" />
 
 
     <ImageButton
@@ -84,7 +91,7 @@
         app:layout_constraintEnd_toStartOf="@+id/SolidRightArrow"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/SolidLeftArrow"
-        app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+        app:layout_constraintTop_toBottomOf="@+id/imageSlider" />
 
     <ImageButton
         android:id="@+id/shareImg"
@@ -105,7 +112,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/solidShare"
-        app:layout_constraintTop_toBottomOf="@id/imageView1" />
+        app:layout_constraintTop_toBottomOf="@id/imageSlider" />
 
     <ImageButton
         android:id="@+id/rightArrowImg"
@@ -122,15 +129,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:gravity="center"
-        android:textStyle="bold"
+        android:text="Click on Image for Download"
         android:textColor="@color/white"
         android:textSize="@dimen/_18sdp"
-        android:text="Click on Image for Download"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/solidShare" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

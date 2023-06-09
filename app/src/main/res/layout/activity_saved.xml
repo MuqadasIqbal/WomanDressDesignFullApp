@@ -27,13 +27,14 @@
         app:layout_constraintBottom_toBottomOf="@id/categoriesView"
         app:layout_constraintStart_toStartOf="@+id/categoriesView"
         app:layout_constraintTop_toTopOf="@+id/categoriesView" />
+
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/imageView1"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_400sdp"
-        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
         android:layout_marginTop="@dimen/_8sdp"
-        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
         android:scaleType="centerCrop"
         android:src="@drawable/d"
         app:layout_constraintEnd_toEndOf="parent"
